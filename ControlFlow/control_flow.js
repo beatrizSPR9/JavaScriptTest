@@ -48,3 +48,22 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+// Practice
+let serviceType;
+
+switch(userType){
+    case "employee": 
+        serviceType = "Access to Dietary Services";
+        break;
+    case "enrolled_mem": 
+        serviceType = "Access to Dietary Services and one-on-one interaction";
+        break;
+    case "subscriber": 
+        serviceType = "Access to Dietary Services";
+        break;
+    default:
+        serviceType = "Subscrive first";
+}
+
+console.log(serviceType);
